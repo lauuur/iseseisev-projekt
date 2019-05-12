@@ -1,0 +1,46 @@
+<!doctype html>
+
+<head>
+  <title>Platformer</title>
+  <meta charset="utf-8">
+  <script src="js/phaser.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    canvas {
+      margin: 0 auto;
+    }
+    body{
+      background: black;
+      font-family: "Lucida Console", Monaco, monospace;
+      color: white;
+    }
+    #soundButton{
+    background-color: inherit;
+    color: black;
+    border: 2px solid white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: inherit;
+    font-family: "Lucida Console", Monaco, monospace;
+    }
+    #nb{
+      font-size: 11px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="game"></div><br>
+  <div id="info" align="center">
+    <div id="text">- Liigu W,A,D või noolenuppudega<br><br>
+      - Kogu mustikaid kuni leiad võtme järgmisele tasemele<br><br>
+      - Väldi ämblikke ning madusid <br><br><br>
+      <div id="nb">NB: Maod ründavad kaugemalt kui ämblikud</div>
+    </div><br>
+    <button id="soundButton" type="button"
+     onclick="toggleSound()">Muusika sisse/välja</button><br><br>
+  </div>
+</body>
